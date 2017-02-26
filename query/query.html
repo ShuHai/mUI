@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+    }
+    .container > div {
+      height: 20px;
+    }
+    .up {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 10px solid grey;
+    }
+    .up:hover {
+      border-bottom: 10px solid red;
+    }
+    .down {
+      margin-top: 5px;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 10px solid grey;
+    }
+    .down:hover {
+      border-top: 10px solid red;
+    }
+    .left {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-right: 10px solid grey;
+      border-bottom: 5px solid transparent;
+    }
+    .left:hover {
+      border-right: 10px solid red;
+    }
+    .right {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-left: 10px solid grey;
+      border-bottom: 5px solid transparent;
+    }
+    .right:hover {
+      border-left: 10px solid red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div>排序上下</div>
+    <div class="query">
+      <div class="up"></div>
+      <div class="down"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div>排序左右</div>
+    <div class="query">
+      <div class="left"></div>
+      <div class="right"></div>
+    </div>
+  </div>
+</body>
+</html>
