@@ -3,9 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <title>button</title>
-  <style></style>
+  <style>
+    button[type="button"]{
+      margin: 20px ;
+      padding: .3em .8em;
+      border: none;
+      border-radius: .2em;
+      color: white;
+      font-size: 100%;
+      line-height: 1.5;
+    }
+    button[type="button"]:focus {
+      border: none;
+      outline: none;
+    }
+    .button.middle{
+      font-size: 150%;
+    }
+
+    .button.big{
+      font-size: 200%;
+    }
+
+    .button.cancel{
+      background-color: #c00;
+    }
+
+    .button.ok{
+      background-color: #6b0;
+    }
+  </style>
 </head>
 <body>
-  <button></button>
+  <button type="button">按钮</button>
 </body>
 </html>
